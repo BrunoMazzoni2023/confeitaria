@@ -1,0 +1,511 @@
+body {
+ 
+    display: flex;
+    flex-direction: column; 
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #dfd3d3;
+   
+
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.side-border {
+  background-color: #ffffff; /* Cor da borda */
+
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  background-color: #dfd3d3;
+  width: 70%;
+  max-width: 1200px; /* Ajuste conforme necessário */
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header {
+  background-color: #FA6289;
+  background-image: url('/static/produtos/imagem/logotipo.png'); 
+  background-position-y: center;
+  background-size: auto;
+  object-fit: cover;  /* Garante que as imagens mantenham a proporção sem distorcer */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 230px;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  /* MAIN */
+main {
+  background-color: #dfd3d3;
+}
+.banner {
+  height: 50px;
+}
+header h1 {
+    margin-right: 90%;
+}
+footer {
+  background-color:  #d3ae7e; /* Cor do rodapé */
+  color: rgb(10, 10, 10);
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+.contato {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para as imagens */
+}
+.destaques-do-cardapio{
+  background-color: #ff7402; /* Cor de fundo do banner */
+  color: #6E2F12; /* Cor do texto */
+  margin-left: 25%;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%); /* Recortes nas bordas */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para as imagens */
+  font-weight: bold;
+}
+/* NAV BAR */
+.navbar-brand, .nav-link, .nav-item{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0;
+  
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+ /* color: white;*/
+  
+}
+.peca{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: space-between;
+  position: absolute;
+  position: relative;
+  left: 120px; /* Move o elemento 100px para a direita */
+}
+#whats-index{
+  font-size: 41px;
+  color:#087a23;
+  background-color: rgb(211, 174, 126);
+  position: absolute;
+
+  position: relative;
+  left: 130px; /* Move o elemento 100px para a direita */
+}
+/* 
+.faca-pedido{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left:10%;
+  text-align: center;
+  margin-top: 10px;
+  color:#FF7402;
+  display: flex;
+}
+  */
+/* NAV BAR */
+ /* //CARD BOLO */
+ .card-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card-bolo {
+    margin: 20px; /* Cria uma margem de 20px em todos os lados */
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    border-radius: 1px;
+    background-color: #c2d6e0;
+}
+  .card-image {
+    flex: 1  50%; /* Define o tamanho da imagem (metade do card) */
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Altura da imagem */
+    border-radius: 5px;
+  }
+   /* //CARD BOLO */
+  .card-info {
+    flex: 1 1 50%; /* Define o tamanho do conteúdo (metade do card) */
+    padding: 20px;
+  }
+  
+  .card-info h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .card-info p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #645151;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+      /* BOTÕES DETALHES E PEDIR */
+
+/* PEDIR PELO WHATS
+.fa-whatsapp {
+  background-color: #dfe4e1;
+  color: rgb(255, 255, 255);
+
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+
+}
+  */
+  .fa-whatsapp {
+
+    margin-right: 20px;
+  }
+
+  .fa-whatsapp:hover {
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-3px);
+  }
+  
+  .detalhes-btn {
+    background-color: rgb(247, 116, 29);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .detalhes-btn:hover {
+    background-color: rgb(217, 96, 9);
+    transform: translateY(-3px);
+  }
+  
+
+  
+            /* BOLO DETALHES */
+  .body-bolodetalhes{
+    background-color: #50524c;
+  }
+  .card-container-bolodetalhes {
+    margin: 40 1;
+    border: 3px solid #ddd;
+    border-radius: 11px;
+
+    display: flex;
+    justify-content: center; /* Espaça os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    background-color: #ffffff;
+  }
+  
+  .card-bolodetalhes {
+    margin: 20px; /* Cria uma margem de 20px em todos os lados */
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    border-radius: 13px;
+    background-color: #e6eaec;
+  }
+  
+  .card-image-bolodetalhes {
+    border-radius: 23px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }  
+  .price-bolodetalhes {
+    font-weight: bold;
+    color: green;  
+}
+  .btn-bolodetalhes {
+    /* Estilos do botão */
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;  
+    align-items: center;
+  }
+             /* BOLO DETALHES */
+
+ /* Banner da promoção COMEÇO */
+.banner-promo {
+  background-color: #ffcc00; /* Cor de fundo do banner */
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%); /* Recortes nas bordas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para as imagens */
+  font-weight: bold;
+}
+.banner-promo::before,
+.banner-promo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+
+    z-index: -1;
+}
+.banner-promo::before {
+  left: -20px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.banner-promo::after {
+  right: -20px;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+.banner-promo h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner-promo p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+/*APOS BANNER COR DO BODY*/
+
+/* BOLO INDEX */
+.content_index {
+  background-color: #dfd3d3;
+  
+}
+.cards-container_index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card_index {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 10px;
+  width: 300px;
+}
+
+.mdc-card__media-item_index {
+  border-radius: 1px;
+
+  height: 250px;  /* Mantém o mesmo tamanho para ambas as imagens 
+  object-fit: cover;  /* Garante que as imagens mantenham a proporção sem distorcer */
+}
+.mdc-card__primary-action_index{
+  background-color:  #cab89f;
+  text-align: center;
+  font-size: 17px;
+}
+/* BOLO INDEX */
+
+/* BOLO LISTA */
+.content {
+  background-color: #DFD3D3;
+  
+}
+.cards-container-bolo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 45px;
+  width: 320px;
+}
+.mdc-card__actions {
+  text-align: center;
+  justify-content: space-between;
+}
+.mdc-card__media-item {
+  border-radius: 1px;
+
+  height: 250px;  /* Mantém o mesmo tamanho para ambas as imagens 
+  object-fit: cover;  /* Garante que as imagens mantenham a proporção sem distorcer */
+}
+.mdc-card__primary-action{
+  background-color:  #cab89f;
+  text-align: center;
+  font-size: 17px;
+}
+/* BOLO LISTA */
+
+@media (max-width: 768px) {
+  .promo-imagens {
+      flex-direction: column;
+  }
+  .promo-imagens img {
+      width: 100%; /* Imagens ficam em blocos, uma abaixo da outra em telas pequenas */
+  }
+  .peca{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: space-between;
+    position: absolute;
+    position: relative;
+    left: 30px; /* Move o elemento 100px para a direita */
+  }
+  #whats-index{
+    font-size:48px;
+    color:#087a23;
+    background-color: rgb(211, 174, 126);
+    position: absolute;
+  
+    position: relative;
+    left: 10px; /* Move o elemento 100px para a direita */
+  }
+  .main-container {
+    flex-direction: column;
+    padding: 0px;
+}
+
+.side-border {
+    display: none; /* Oculta as bordas laterais em dispositivos móveis */
+}
+
+.content-wrapper {
+    width: 100%;
+}
+
+.destaques-do-cardapio {
+    padding: 10px;
+}
+}
+ /* Banner da promoção FINAL */
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        max-width: 50%;
+    }
+}
+@media (max-width: 480px) {
+  .destaques-do-cardapio {
+  justify-content: center;
+  align-items: center;
+  margin:20 50;
+  width: 300px;
+  padding: 10px;
+  font-size: 26px; /* Reduzindo ainda mais a fonte */
+  }
+  .banner-promo {
+    background-color: #ffcc00; /* Cor de fundo do banner */
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 10;
+    border-radius: 8px;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%); /* Recortes nas bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para as imagens */
+    font-weight: bold;
+  }
+  .banner-promo::before,
+  .banner-promo::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 20px;
+      height: 100%;
+  
+      z-index: -1;
+  }
+  .banner-promo::before {
+    left: -20px;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+  
+  .banner-promo::after {
+    right: -20px;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  }
+  .banner-promo h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner-promo p {
+    font-size: 0.9 0rem;
+    margin: 0;
+  }
+  
+}
+@media (min-width: 768px) {
+    .col-md-4 {
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        max-width: 25%;
+    }
+}

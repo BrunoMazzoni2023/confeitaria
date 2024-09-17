@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Cake Shop</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <a href="#" class="material-icons mdc-top-app-bar__action-item">home</a>
+                <a href="#" class="material-icons mdc-top-app-bar__action-item">shopping_cart</a>
+                <a href="#" class="material-icons mdc-top-app-bar__action-item">account_circle</a>
+            </section>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="mdc-top-app-bar--fixed-adjust">
+            <div class="cake-cards-container">
+                <!-- Card 1 -->
+                <div class="mdc-card cake-card">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                        <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url('cake1.jpg');"></div>
+                        <div class="card-content">
+                            <h2 class="mdc-typography--headline6">Bolo de Chocolate</h2>
+                            <p class="mdc-typography--body2">Delicioso bolo de chocolate com cobertura cremosa.</p>
+                        </div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--button">Comprar</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="mdc-card cake-card">
+                    <div class="mdc-card__primary-action" tabindex="0">
+                        <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url('cake2.jpg');"></div>
+                        <div class="card-content">
+                            <h2 class="mdc-typography--headline6">Bolo de Morango</h2>
+                            <p class="mdc-typography--body2">Bolo de morango com chantilly e frutas frescas.</p>
+                        </div>
+                    </div>
+                    <div class="mdc-card__actions">
+                        <button class="mdc-button mdc-card__action mdc-card__action--button">Comprar</button>
+                    </div>
+                </div>
+                <!-- Adicione mais cartões conforme necessário -->
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Centralizado</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr minmax(0, 1200px) 1fr; /* Duas colunas laterais e uma coluna central */
+            height: 100%;
+            background-color: #be0f0f; /* Cor de fundo para as laterais */
+        }
+        
+        .sidebar-left, .sidebar-right {
+            background-color: #130a0a; /* Cor das "paredes" laterais */
+        }
+        
+        .content {
+            background-color: #aa11aa; /* Cor do conteúdo centralizado */
+            padding: 20px; /* Espaço interno para o conteúdo */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar-left">
+            asasasdaasdasd
+        </div>
+        <div class="content">
+            <!-- Seu conteúdo aqui -->
+        </div>
+        <div class="sidebar-right"></div>
+    </div>
+</body>
+</html>

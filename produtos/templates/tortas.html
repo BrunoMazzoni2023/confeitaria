@@ -1,0 +1,20 @@
+<!-- produtos/templates/tortas.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tortas</title>
+</head>
+<body>
+    <h1>Tortas</h1>
+    <ul>
+        {% for torta in tortas %}
+        <li>
+            <h2>{{ torta.nome }}</h2>
+            <p>Valor: {{ torta.valor }}</p>
+            <p>Preço: {{ torta.preco }}</p>
+            <img src="{{ torta.imagem.url }}" alt="{{ torta.nome }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
