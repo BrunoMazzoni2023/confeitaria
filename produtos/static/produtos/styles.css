@@ -16,36 +16,50 @@ body {
 }
 
 .side-border {
-  background-color: #ffffff; /* Cor da borda */
+  background-color: #75401577;
 
   min-height: 100vh;
 }
 
 .content-wrapper {
-  background-color: #dfd3d3;
+  background-color: #75401577;
   width: 70%;
   max-width: 1200px; /* Ajuste conforme necessário */
 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px #00000077;
+
+}
+.logo{
+
+margin-top: -2%;
+}
+.logotipo2{
+height: 300px;
+width: 500px;
+border-radius: 10px;
+
+
 }
 header {
-  background-color: #FA6289;
-  background-image: url('/static/produtos/imagem/logotipo.png'); 
+  background-color:  #d3ae7e; /* Cor do rodapé */
+ /* background-color: #75401577;*/
+ /* background-image: url('/static/produtos/imagem/logotipo2.png'); */
   background-position-y: center;
   background-size: auto;
   object-fit: cover;  /* Garante que as imagens mantenham a proporção sem distorcer */
   background-position: center;
   background-repeat: no-repeat;
-  height: 230px;
-  color: white;
-  padding: 20px;
+  height: 220px;
+  
+
+  
   width: 100%;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   /* MAIN */
 main {
-  background-color: #dfd3d3;
+  background-color: #75401577;
 }
 .banner {
   height: 50px;
@@ -100,7 +114,7 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 14px 20px;
-    color: white;
+  background-color: #75401577;
     text-decoration: none;
     transition: background-color 0.3s;
 }
@@ -183,6 +197,7 @@ nav ul li a:hover {
   }
   
   .price {
+    height: 10%;
     font-weight: bold;
     color: green;
   }
@@ -213,7 +228,7 @@ nav ul li a:hover {
   }
 
   .fa-whatsapp:hover {
-    background-color: rgb(255, 255, 255);
+    background-color:  #dfd8cf;
     transform: translateY(-3px);
   }
   
@@ -343,13 +358,17 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #c4b7b1;
+  
 }
 .card_index {
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 4.5px;
+  box-shadow: 200 200px 200px rgba(238, 10, 143, 0.1);
+  background-color:  #dfd8cf;
   position: relative;
-  margin: 10px;
+  margin: 45px;
   width: 300px;
+  border-radius: 10px;
 }
 
 .mdc-card__media-item_index {
@@ -362,6 +381,8 @@ nav ul li a:hover {
   background-color:  #cab89f;
   text-align: center;
   font-size: 17px;
+  border-radius: 2px;
+
 }
 /* BOLO INDEX */
 
@@ -374,17 +395,23 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #c4b7b1;
+
 }
-.card {
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card_bolos{
+  padding: 1.5px;
+  box-shadow: 200 200px 200px rgba(238, 10, 143, 0.1);
+  background-color:  #dfd8cf;
   position: relative;
   margin: 45px;
-  width: 320px;
+  width: 300px;
+  border-radius: 10px;
 }
+
 .mdc-card__actions {
   text-align: center;
   justify-content: space-between;
+
 }
 .mdc-card__media-item {
   border-radius: 1px;
@@ -395,9 +422,47 @@ nav ul li a:hover {
 .mdc-card__primary-action{
   background-color:  #cab89f;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+.mdc-card__content{
+  margin-top: 50%;
+}
+.bolonome{
+font-size: 25px;
+color: #333;
+font-weight: bold;
+}
+
+.bolovalor {
+margin-bottom: 0.1rem;
+color: #087a23;
+font-weight: bold;
 }
 /* BOLO LISTA */
+
+/* WHATS INDEX */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+
+}
+/* WHATS INDEX */
 
 @media (max-width: 768px) {
   .promo-imagens {
@@ -454,7 +519,7 @@ nav ul li a:hover {
   align-items: center;
   margin:20 50;
   width: 300px;
-  padding: 10px;
+  padding: 20px;
   font-size: 26px; /* Reduzindo ainda mais a fonte */
   }
   .banner-promo {
@@ -496,16 +561,20 @@ nav ul li a:hover {
     font-size: 0.9 0rem;
     margin: 0;
   }
+
+  
   
 }
 @media (min-width: 768px) {
     .col-md-4 {
         max-width: 33.3333%;
     }
+    
 }
 
 @media (min-width: 992px) {
     .col-lg-3 {
         max-width: 25%;
     }
+    
 }

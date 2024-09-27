@@ -18,12 +18,16 @@
 
 <body>
     <header>
-        <!--   <div class="logo">
-            <img src="{% static 'produtos/imagem/logotipo1.png' %}" alt="Logo da Loja de Bolos">
-        </div>-->
+          <div class="logo">
+            <img class="logotipo2" src="{% static 'produtos/imagem/logotipo2.png' %}" alt="Logo da Loja de Bolos">
+        </div>
  
-  
+      
     </header>
+    <a href="https://wa.me/5511930948167?text=Olá, gostaria de pedir o {{ bolo.nome }}!" class="whatsapp-button">
+        <img src="{% static 'produtos/imagem/zap.png' %}" alt="Whatsapp">
+    </a>
+      
     <div class="main-container">
         <div class="side-border"></div>
         <div class="content-wrapper">
@@ -31,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d3ae7e; ">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Menu</a>
-            <div class="peca">Faça o Seu Pedido</div>
+            <div class="peca">Peça Aqui</div>
             <a href="https://wa.me/5511930948167?text=Olá, gostaria de fazer um pedido! {{ bolo.nome }}!" class="whatsapp-btn-index">       
               
                   <i class="fa fa-whatsapp" id="whats-index" ></i>
@@ -70,7 +74,7 @@
       <section class="content_index">
         <div class="cards-container_index">
             {% for destaque in destaques %}
-            <div class="mdc-card card">
+            <div class="mdc-card card_index">
                 <img src="{{ destaque.imagem.url }}" alt="{{ destaque.nome }}" class="mdc-card__media-item">
                 <div class="mdc-card__primary-action_index">
                     <h3>{{ destaque.nome }}</h3>
@@ -99,8 +103,13 @@
     document.addEventListener('DOMContentLoaded', function () {
         mdc.autoInit();
     });
+
+    document.querySelector('.whatsapp-button').addEventListener('click', function() {
+    // Ação ao clicar no botão, como rastreamento de eventos ou animação
+  });
 </script>
-      
+
+  
 
 
 <footer>
@@ -110,6 +119,7 @@
         <p>Telefone: (11) 1234-5678</p>
   <p>© 2024 Loja de Bolos. Todos os direitos reservados.</p>
 </footer>
+
 </body>
 
 </html>
